@@ -2,7 +2,9 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const axios = require('axios');
 const datafire = require('datafire');
-// const primeng = require('primeng');
+require('dotenv').config();
+
+
  let username = "";
 function inquireQuestions() {
     inquirer
@@ -109,17 +111,24 @@ ${res.license}
  
   }
   inquireQuestions();
+const axios = require('axios');
+// github to users to single user /// get host value first
+// to get email: oAuth2 token 
+
+const api = {
+  getUser(username){
+    axios
+    .get(`https://api.github.com/users${username}`,
+    {
+      headers: {'Authorization': `token ${process.env.token}`}
+    })
+    .then(response => console.log(response.data))
+    .catch(error => console.log (error))
+  }
+};
+api.getUser();
+
+// dotENV ------ 
 
 
-function githubAPICall () {
-console.log (username);
-const queryURL = `https://api.github.com/users`+ username;
 
-  axios
-  .get(queryURL)
-  .then(function(res) {
-    console.log(res.data);
-  });
-}
-
- //end function
