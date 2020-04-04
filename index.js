@@ -1,11 +1,10 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const axios = require('axios');
-const datafire = require('datafire');
+// const badges = require('gh-badges');
 require('dotenv').config();
 
 
- let username = "";
 function inquireQuestions() {
     inquirer
   .prompt([
@@ -15,120 +14,131 @@ function inquireQuestions() {
       name: "username"
     },
     {
-      type: "password",
-      message: "GitHub Password",
-      name: "password"
+      type: "input",
+      message: "Project Title",
+      name: "project"
     },
     {
       type: "input",
-      message: "Project Title",
-      name: "project name"
+      message: "Description",
+      name: "description"
+    },
+    {
+      type: "input",
+      message: "Installation",
+      name: "installation"
+    },
+    {
+        type: "checkbox",
+        message: "Technology Stack Used",
+        choices:  ["Node.Js", " Express", " JavaScript", " jQuery", " React.js", " React", " GIT", " GitHub", " MongoDB", " MySQL", " Firebase", " Handlebars", " HTML", " CSS", " Bootstrap", " Media Queries", " APIs", " Microsoft Suite", " Heroku", " Command- Line"],
+       name: "technology"
+    },
+    {
+        type: "input",
+        message: "Usage",
+        name: "usage"
+      },
+{
+        type: "list",
+        message: "What license do you want to use?",
+        choices: ["MIT", "BSD", "ISC", "Apache", "GPL"],
+        name: "license"
     },
     {
         type: "input",
         message: "Contributors",
         name: "contributors"
       },
+    
+     
       {
         type: "input",
-        message: "Description of Project",
-        name: "description"
+        message: "What is your LinkedIn URL?",
+        name: "linkedIn"
       },
       {
-        type: "checkbox",
-        message: "Technology Stack Used",
-        choices: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "jQuery",
-            "Node.js",
-            "Express", 
-            "React.js",
-            "React", 
-            "GIT", 
-             "GitHub",
-            "MongoDB", 
-            "MySQL", 
-            "Firebase", 
-            "Handlebars", 
-            "Bootstrap", 
-            "Media Queries",
-             "APIs", 
-             "Microsoft Suite",
-              "Heroku",
-               "Command- Line"
-       ],
-        name: "technology"
-      },
-      {
-        type: "list",
-        message: "What license do you want to use?",
-        choices: [
-            "MIT", 
-        "BSD", 
-        "ISC", 
-        "Apache", 
-        "GPL"
-        ]
-    },
-    
-
+        type: "input",
+        message: "Tests?",
+        name: "tests"
+      }
   ])
-  .then(function(res) {
-// console.log(response);
-userName = res.userName;
+  .then(function(response){
+    let userName = response.username;
+    console.log(response);
+    githubAPICall(userName, response);
+  });
+}
 
-` # Project
-${res.project}
-// ## Live Link
-## Description
-${res.description}
-## Technology Stack
-${res.technology}
-## Contributors
-${res.contributors}
-## Contributors
-${res.contributors}
-## Contact
-* #### Name:  ()
-${res.name}
-* #### Email: []()
-${res.email}
-* #### LinkedIn: "https:www.linkedin.com/in/
-## License
-${res.license}
-`
-// End MarkUp
-      fs.writeFile("README.md", usersInfo, function(err) {
-      if (err) {
-      return console.log(err);
-       }
-      console.log("Success!");
-      });
-      githubAPICall();
-    });
- 
-  }
-  inquireQuestions();
-const axios = require('axios');
-// github to users to single user /// get host value first
-// to get email: oAuth2 token 
+inquireQuestions();
 
-const api = {
+const githubAPICall = {
   getUser(username){
     axios
     .get(`https://api.github.com/users${username}`,
     {
       headers: {'Authorization': `token ${process.env.token}`}
     })
-    .then(response => console.log(response.data))
-    .catch(error => console.log (error))
-  }
+    .then(function(response){
+      generateMD(response, res);
+    })
+      .catch(function (error) {
+      console.log(error);
+      })
+  }   
 };
-api.getUser();
 
-// dotENV ------ 
+function generateMD(response, res) {
+  var userInfo =`
+<img src = "${res.data.avatar_url}">
+
+ # Project
+${res.project}
+
+// ## Live Link
+## Table of Contents
+### Contributors
+${res.contributors}
+
+## Description
+${res.description}
+## Installation
+${res.installation}
+
+## Technology Stack
+${res.technology}
+## Usage
+${res.usage}
 
 
+## Contact
+* #### Name:  ()
+${res.data.name}
+* ### GitHub 
+"https://github.com/${response.userName}"
+${response.portfolio}
+* #### Email: []()
+[${res.data.email}](${res.data.email})
+
+* ### PortfolioPic
+${res.data.avatar}
+* #### LinkedIn: "https:www.linkedin.com/in/${response.linkedin}
+## License
+${res.license}
+
+## Tests
+${res.tests}
+`
+
+
+// End MarkUp
+fs.writeFile("README.md", userInfo, function(err) {
+  if (err) {
+  return console.log(err);
+  }
+  console.log("Success!");
+});
+}
+    
+ 
 
