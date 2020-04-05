@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const axios = require('axios');
-// const badges = require('gh-badges');
+const badges = require('./gh-badges');
 require('dotenv').config();
 
 
@@ -59,75 +59,76 @@ function inquireQuestions() {
       },
       {
         type: "input",
-        message: "Tests?",
+        message: "What is the command to run tests?",
         name: "tests"
       }
   ])
-  .then(function(response){
-    let userName = response.username;
-    console.log(response);
-    githubAPICall(userName, response);
+  .then(function(answers){
+    let userName = answers.username;
+    // console.log(response);
+    githubAPICall(userName, answers);
   });
 }
 
 inquireQuestions();
 
-const githubAPICall = {
-  getUser(username){
+function githubAPICall  (username, ans) {
     axios
-    .get(`https://api.github.com/users${username}`,
-    {
-      headers: {'Authorization': `token ${process.env.token}`}
-    })
+    .get(`https://api.github.com/users/${username}`,
+    
+      {'Authorization': `token ${process.env.TOKEN}`}
+    )
     .then(function(response){
-      generateMD(response, res);
+      generateMD(response, ans);
+      console.log(response.data);
     })
       .catch(function (error) {
       console.log(error);
       })
   }   
-};
 
-function generateMD(response, res) {
-  var userInfo =`
-<img src = "${res.data.avatar_url}">
-
+function generateMD(response, answers) {
+var userInfo =`
+<img src = "${response.data.avatar_url}">
+// alt = "profile pic" style="width:"
  # Project
-${res.project}
+${answers.project}
 
 // ## Live Link
+
 ## Table of Contents
+
 ### Contributors
-${res.contributors}
+${answers.contributors}
 
 ## Description
-${res.description}
+${answers.description}
 ## Installation
-${res.installation}
+${answers.installation}
 
 ## Technology Stack
-${res.technology}
+${answers.technology}
 ## Usage
-${res.usage}
+${answers.usage}
 
 
 ## Contact
 * #### Name:  ()
-${res.data.name}
+${response.data.name}
 * ### GitHub 
 "https://github.com/${response.userName}"
 ${response.portfolio}
 * #### Email: []()
-[${res.data.email}](${res.data.email})
+[${response.data.email}](${response.data.email})
 
-* ### PortfolioPic
-${res.data.avatar}
-* #### LinkedIn: "https:www.linkedin.com/in/${response.linkedin}
+
+* #### LinkedIn: "https:www.linkedin.com/in/${answers.linkedIn}
 ## License
-${res.license}
+${answers.license}
 
 ## Tests
-${res.tests}
+### To Run Tests, Run the Following Commmand:
+${answers.tests}
 `
 
 
@@ -141,4 +142,5 @@ fs.writeFile("README.md", userInfo, function(err) {
 }
     
  
+
 
