@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const axios = require('axios');
-const myBadge = require('./badges');
+// const myBadge = require('./badges');
 require('dotenv').config();
 
 

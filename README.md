@@ -1,30 +1,30 @@
 
-<img src = "https://avatars3.githubusercontent.com/u/60341?v=4">
-
+<img src = "https://avatars2.githubusercontent.com/u/57425164?v=4">
+// alt = "profile pic" style="width:"
  # Project
-asdf
+project
 
 // ## Live Link
 
 ## Table of Contents
 
 ### Contributors
-asf
+@meme
 
 ## Description
-asf
+description
 ## Installation
-asf
+install it all
 
 ## Technology Stack
 Node.Js
 ## Usage
-asf
+a lot of people will use a readme
 
 
 ## Contact
 * #### Name:  ()
-Taku M
+null
 * ### GitHub 
 "https://github.com/undefined"
 undefined
@@ -32,9 +32,12 @@ undefined
 [null](null)
 
 
-* #### LinkedIn: "https:www.linkedin.com/in/asdf
+* #### LinkedIn: "https:www.linkedin.com/in/theresa-eatherly@linkedin.com
 ## License
 MIT
 
+[travis-image]: https://img.shields.io/travis/git-theresa/GenerateRM/master.svg?label=license
+
 ## Tests
-asf
+### To Run Tests, Run the Following Command:
+nmp i
