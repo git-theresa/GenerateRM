@@ -1,28 +1,30 @@
 
-<img src = "https://avatars2.githubusercontent.com/u/57425164?v=4">
-// alt = "profile pic" style="width:"
- # Project
-project
 
-// ## Live Link
+# **Project** Generate ReadMe
 
-## Table of Contents
+## Live Link
 
-### Contributors
-@meme
+##  **Table of Contents**
+  *Description
+  *Installation
+  *Usage
 
-## Description
-description
-## Installation
-install it all
+###  **Contributors**
+@git-theresa
 
-## Technology Stack
-Node.Js
-## Usage
-a lot of people will use a readme
+##  **Description**
+GenerateRM allows a user to create a MarkDown file for each project
+## **Installation**
+JSON Package Provided
+
+## **Technology Stack**
+ Node.Js, JavaScript, jQuery, GIT, GitHub, CSS, APIs, Command- Line
+##  **Usage**
+1. In your terminal, install JSON dependencies given 2. blah blah
 
 
-## Contact
+## **Contact**
+<img align="right" width="100" height="100" src="https://avatars2.githubusercontent.com/u/57425164?v=4">
 * #### Name:  ()
 null
 * ### GitHub 
@@ -32,7 +34,7 @@ undefined
 [null](null)
 
 
-* #### LinkedIn: "https:www.linkedin.com/in/theresa-eatherly@linkedin.com
+* #### LinkedIn: "https:www.linkedin.com/in/theresa-eatherly
 ## License
 MIT
 
@@ -40,4 +42,4 @@ MIT
 
 ## Tests
 ### To Run Tests, Run the Following Command:
-nmp i
+nmp
