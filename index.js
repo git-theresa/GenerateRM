@@ -8,6 +8,10 @@ require('dotenv').config();
 function inquireQuestions() {
   inquirer
   .prompt([
+  {   type: "input",
+      message: "What is your full name",
+      name: "name"
+  },
   {
     type: "input",
     message: "GitHub username",
@@ -99,35 +103,42 @@ ${answers.contributors}
 
 ##  **Description**
 ${answers.description}
+
 ## **Installation**
 ${answers.installation}
 
 ## **Technology Stack**
 ${answers.technology}
+
 ##  **Usage**
 ${answers.usage}
 
 
 ## **Contact**
-<img align="right" width="100" height="100" src="${response.data.avatar_url}">
+<img align="left" width="100" height="100" src="${response.data.avatar_url}">
 * #### Name:  ()
 ${response.data.name}
 * ### GitHub 
-"https://github.com/${response.userName}"
+"https://github.com/users/${response.username}"
 ${response.portfolio}
-* #### Email: []()
+
+* #### Email: 
 [${response.data.email}](${response.data.email})
 
 
-* #### LinkedIn: "https:www.linkedin.com/in/${answers.linkedIn}
-## License
+* #### LinkedIn: "https://www.linkedin.com/in/${answers.linkedIn}
+
+## **License**
 ${answers.license}
 
-[travis-image]: https://img.shields.io/travis/git-theresa/GenerateRM/master.svg?label=license
+
 
 ## Tests
+[travis-image]: https://img.shields.io/travis/git-theresa/GenerateRM/badge.svg?label=license
+
 ### To Run Tests, Run the Following Command:
 ${answers.tests}
+
 `
 
 

@@ -1,6 +1,6 @@
 
 
-# **Project** Generate ReadMe
+# **Project** GenerateRM
 
 ## Live Link
 
@@ -13,33 +13,40 @@
 @git-theresa
 
 ##  **Description**
-GenerateRM allows a user to create a MarkDown file for each project
+GenerateRM allows developers to create a MarkDown file within Node.js
+
 ## **Installation**
-JSON Package Provided
+JSON Package Included
 
 ## **Technology Stack**
- Node.Js, JavaScript, jQuery, GIT, GitHub, CSS, APIs, Command- Line
+ Node.Js, JavaScript, jQuery, GitHub, HTML, CSS, APIs
+
 ##  **Usage**
-1. In your terminal, install JSON dependencies given 2. blah blah
+1. User will install all dependencies within the given JSON package
 
 
 ## **Contact**
-<img align="right" width="100" height="100" src="https://avatars2.githubusercontent.com/u/57425164?v=4">
+<img align="left" width="100" height="100" src="https://avatars2.githubusercontent.com/u/57425164?v=4">
 * #### Name:  ()
 null
 * ### GitHub 
-"https://github.com/undefined"
+"https://github.com/users/undefined"
 undefined
-* #### Email: []()
+
+* #### Email: 
 [null](null)
 
 
-* #### LinkedIn: "https:www.linkedin.com/in/theresa-eatherly
-## License
+* #### LinkedIn: "https://www.linkedin.com/in/theresa-eatherly
+
+## **License**
 MIT
 
-[travis-image]: https://img.shields.io/travis/git-theresa/GenerateRM/master.svg?label=license
+
 
 ## Tests
+[travis-image]: https://img.shields.io/travis/git-theresa/GenerateRM/badge.svg?label=license
+
 ### To Run Tests, Run the Following Command:
-nmp
+npm
+
