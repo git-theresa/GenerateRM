@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const axios = require('axios');
-const badges = require('./gh-badges');
+const myBadge = require('./badges');
 require('dotenv').config();
 
 
@@ -125,6 +125,8 @@ ${response.portfolio}
 * #### LinkedIn: "https:www.linkedin.com/in/${answers.linkedIn}
 ## License
 ${answers.license}
+
+[travis-image]: https://img.shields.io/travis/git-theresa/GenerateRM/master.svg?label=license
 
 ## Tests
 ### To Run Tests, Run the Following Command:
