@@ -127,7 +127,7 @@ ${response.portfolio}
 ${answers.license}
 
 ## Tests
-### To Run Tests, Run the Following Commmand:
+### To Run Tests, Run the Following Command:
 ${answers.tests}
 `
 
