@@ -127,11 +127,9 @@ ${answers.usage}
 
 
 ## **Contact**
-# <img align="left" width="100" height="100" src="${response.data.avatar_url}">
+# 
 #
-<br />
-#
-<br />
+
 ####  ** Name: ${answers.firstLast}
 ####  ** GitHub ${answers.html_url}
 ####  ** Portfolio ~~available~~ ${response.portfolio}
@@ -139,6 +137,7 @@ ${answers.usage}
 #### ** LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
 
 ## 
+<img align="left" width="100" height="100" src="${response.data.avatar_url}">
 <br />
 
 ##### **License**
