@@ -15,36 +15,37 @@
 @git-theresa
 
 ##  **Description**
-GenerateRM allows developers to create a MarkDown file using Node.js
+GenerateRM allows a developer to create a MarkDown File using Node.js
 
 ## **Installation**
 JSON Package Included
 
 ## **Technology Stack**
- Node.Js, JavaScript, jQuery, GitHub, APIs, Command- Line
+ Node.Js, JavaScript, jQuery, GitHub, CSS, APIs, Command- Line
 
 ##  **Usage**
-1. User opens their terminal and installs all dependencies within the given JSON Packages
+User must first install all dependencies given within the JSON Package
 
 
 ## **Contact**
-## ----
+## 
 <img align="left" width="100" height="100" src="https://avatars2.githubusercontent.com/u/57425164?v=4">
 
 <br />
-## --------------------------------------------------------------------
-####  Name: undefined
-####   GitHub "https://github.com/users/git-theresa"
+## 
+<br />
+####  Name: Theresa Eatherly
+####   GitHub undefined
 ####  Portfolio ~~available~~ undefined
 #### Email: [null](null)
-#### LinkedIn: "https://www.linkedin.com/in/theresa-eatherly
+#### LinkedIn: https://www.linkedin.com/in/theresa-eatherly
 
-## -------------------------------------------------------------------
+## 
 <br />
 
 ##### **License**
 MIT
 ## Tests
 [travis-image]: (https://img.shields.io/travis/git-theresa/GenerateRM/badge.svg?label=license)
-###### To Run Tests, Run the Following Command: nmp
+###### To Run Tests, Run the Following Command: nmp i
 

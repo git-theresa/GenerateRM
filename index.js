@@ -66,6 +66,7 @@ function inquireQuestions() {
   }
   ])
     .then(function(answers){
+      // answers.username="theresa";
     let userName = answers.username;
     githubAPICall(userName, answers);
     });
@@ -77,15 +78,25 @@ inquireQuestions();
     .get(`https://api.github.com/users/${username}`,
       {'Authorization': `token ${process.env.TOKEN}`}
       )
-      .then(function(response){
+      .then(function(response){ 
+    //      axios
+    // .get(`https://api.github.com/users/${username}/events{/public}`,
+    //   {'Authorization': `token ${process.env.TOKEN}`}
+    //   )
+    //   .then(function(emails){
+    //     console.log(emails);
       generateMD(response, ans);
       console.log(response.data);
       })
-      .catch(function (error) {
+     
+    // })
+     .catch(function (error) {
       console.log(error);
       })
-    }   
+    }
 
+
+        
 function generateMD(response, answers) {
 var userInfo =`
 
@@ -123,11 +134,11 @@ ${answers.usage}
 <br />
 ## 
 <br />
-####  Name: ${response.data.firstLast}
-####   GitHub "https://github.com/users/${answers.username}"
+####  Name: ${answers.firstLast}
+####   GitHub ${answers.html_url}
 ####  Portfolio ~~available~~ ${answers.portfolio}
 #### Email: [${response.data.email}](${response.data.email})
-#### LinkedIn: "https://www.linkedin.com/in/${answers.linkedIn}
+#### LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
 
 ## 
 <br />
