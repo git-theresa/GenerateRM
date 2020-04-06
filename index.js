@@ -94,11 +94,12 @@ inquireQuestions();
 function generateMD(response, answers) {
 var userInfo =`
 
-<img align="left" src= "https://img.shields.io/badge/License-${response.license}-green">
-hr
+<img align="left" src= "https://img.shields.io/badge/License-${answers.license}-green">
+#
 # **Project** ${answers.project}
-
-## ~~Live Link~~
+#
+## Live Link 
+  * ~~Insert Live Link Once Generated~~
 
 ##  **Table of Contents**
   * Description
@@ -113,10 +114,10 @@ ${answers.description}
 
 ## **Installation**
 ${answers.installation}
-hr
+
 ## **Technology Stack**
 ${answers.technology}
-hr
+
 ##  **Usage**
 ${answers.usage}
 
@@ -124,23 +125,19 @@ ${answers.usage}
 ${answers.contributors}
 
 ## **Contact**
-####  ** Name: 
-${answers.firstLast}
-####  ** GitHub 
-${answers.html_url}
-####  ** Portfolio 
+####  * Name: ${answers.firstLast}
+####  * GitHub "https://github.com/${answers.username}" 
+####  * Portfolio 
 ~~${response.portfolio}~~
-#### ** Email: 
-[${response.data.email}](${response.data.email})
-#### ** LinkedIn:
-https://www.linkedin.com/in/${answers.linkedIn}
+#### * Email: [${response.data.email}](${response.data.email})
+#### * LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
 #
 ## 
 <img align="left" width="100" height="100" src="${response.data.avatar_url}">
 <br />
-hr
-##### **License**
-${answers.license}
+
+#
+##### **License** ${answers.license}
 
 ## Tests
 ###### To Run Tests, Run the Following Command: ${answers.tests}
