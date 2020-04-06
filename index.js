@@ -1,13 +1,13 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const axios = require('axios');
-// const myBadge = require('./badges');
 require('dotenv').config();
 
 
 function inquireQuestions() {
   inquirer
   .prompt([
+
   {   type: "input",
       message: "What is your full name",
       name: "firstLast"
@@ -93,7 +93,9 @@ inquireQuestions();
         
 function generateMD(response, answers) {
 var userInfo =`
+
 <img align="left" src= "https://img.shields.io/badge/License-${response.license}-green">
+hr
 # **Project** ${answers.project}
 
 ## ~~Live Link~~
@@ -111,10 +113,10 @@ ${answers.description}
 
 ## **Installation**
 ${answers.installation}
-
+hr
 ## **Technology Stack**
 ${answers.technology}
-
+hr
 ##  **Usage**
 ${answers.usage}
 
@@ -136,11 +138,11 @@ https://www.linkedin.com/in/${answers.linkedIn}
 ## 
 <img align="left" width="100" height="100" src="${response.data.avatar_url}">
 <br />
-
+hr
 ##### **License**
 ${answers.license}
+
 ## Tests
-[travis-image]: (https://img.shields.io/travis/git-theresa/GenerateRM/badge.svg?label=license)
 ###### To Run Tests, Run the Following Command: ${answers.tests}
 
 `
@@ -155,7 +157,7 @@ ${answers.license}
 });
 }
 
-    
+// theresa-eatherly-4362b14a/ 
  
 
 
