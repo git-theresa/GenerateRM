@@ -83,17 +83,12 @@ inquireQuestions();
     })
   
       .then(function(response){ 
-    //      axios
-    // .get(`https://api.github.com/users/${username}/events{/public}`,
-    //   {'Authorization': `token ${process.env.TOKEN}`}
-    //   )
-    //   .then(function(emails){
-    //     console.log(emails);
+    
       generateMD(response, ans);
       console.log(response.data);
       })
      
-    // })
+
      .catch(function (error) {
       console.log(error);
       })
@@ -132,17 +127,16 @@ ${answers.usage}
 
 
 ## **Contact**
-#
-<img align="left" width="100" height="100" src="${response.data.avatar_url}">
+# <img align="left" width="100" height="100" src="${response.data.avatar_url}">
 #
 <br />
-## 
+#
 <br />
-* ####  Name: ${answers.firstLast}
-* ####   GitHub ${answers.html_url}
-* ####  Portfolio ~~available~~ ${answers.portfolio}
-* #### Email: [${response.data.email}](${response.data.email})
-* #### LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
+####  ** Name: ${answers.firstLast}
+####  ** GitHub ${answers.html_url}
+####  ** Portfolio ~~available~~ ${response.portfolio}
+#### ** Email: [${response.data.email}](${response.data.email})
+#### ** LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
 
 ## 
 <br />
