@@ -7,10 +7,10 @@ require('dotenv').config();
 function inquireQuestions() {
   inquirer
   .prompt([
-
-  {   type: "input",
-      message: "What is your full name",
-      name: "firstLast"
+  {   
+    type: "input",
+    message: "What is your full name",
+    name: "firstLast"
   },
   {
     type: "input",
@@ -66,7 +66,6 @@ function inquireQuestions() {
   }
   ])
     .then(function(answers){
-     
     let username = answers.username;
     githubAPICall(username, answers);
     });
@@ -90,71 +89,71 @@ inquireQuestions();
     }
 
 
-        
-function generateMD(response, answers) {
-var userInfo =`
+        // Generate ReadMe 
+    function generateMD(response, answers) {
+    var userInfo =`
+    <img align="left" src= "https://img.shields.io/badge/License-${answers.license}-green">
+    #
+    #
+    <br />
+    # **Project** ${answers.project}
+    #
+    <br />
 
-<img align="left" src= "https://img.shields.io/badge/License-${answers.license}-green">
-#
-# **Project** ${answers.project}
-#
-## Live Link 
-  * ~~Insert Live Link Once Generated~~
+    ## Live Link 
+    * ~~Insert Live Link Once Generated~~
 
-##  **Table of Contents**
-  * Description
-  * Installation
-  * Technology Stack
-  * Usage
+    ##  **Table of Contents**
+    * Description
+    * Installation
+    * Technology Stack
+    * Usage
 
+    ##  **Description**
+    ${answers.description}
 
+    ## **Installation**
+    ${answers.installation}
 
-##  **Description**
-${answers.description}
+    ## **Technology Stack**
+    ${answers.technology}
 
-## **Installation**
-${answers.installation}
+    ##  **Usage**
+    ${answers.usage}
 
-## **Technology Stack**
-${answers.technology}
+    ###  **Contributors**
+    ${answers.contributors}
 
-##  **Usage**
-${answers.usage}
+    ## **Contact**
+    ####  * Name: ${answers.firstLast}
+    ####  * GitHub "https://github.com/${answers.username}" 
+    ####  * Portfolio 
+    ~~${response.portfolio}~~
+    #### * Email: [${response.data.email}](${response.data.email})
+    #### * LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
+    #
+    ## 
+    <img align="left" width="100" height="100" src="${response.data.avatar_url}">
+    <br />
+    #
+    ##### **License** ${answers.license}
 
-###  **Contributors**
-${answers.contributors}
+    ## Tests
+    ###### To Run Tests, Run the Following Command: ${answers.tests}
 
-## **Contact**
-####  * Name: ${answers.firstLast}
-####  * GitHub "https://github.com/${answers.username}" 
-####  * Portfolio 
-~~${response.portfolio}~~
-#### * Email: [${response.data.email}](${response.data.email})
-#### * LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
-#
-## 
-<img align="left" width="100" height="100" src="${response.data.avatar_url}">
-<br />
+    `
+    // End MarkUp
 
-#
-##### **License** ${answers.license}
-
-## Tests
-###### To Run Tests, Run the Following Command: ${answers.tests}
-
-`
-// End MarkUp
-
-  
-  fs.writeFile("README.md", userInfo, function(err) {
-  if (err) {
-  return console.log(err);
-  }
-  console.log("Success!");
-});
+      // Place Responses and Answers onto Page
+      fs.writeFile("README.md", userInfo, function(err) {
+      if (err) {
+      return console.log(err);
+      }
+      console.log("Success!");
+      });
 }
 
-// theresa-eatherly-4362b14a/ 
+
  
 
 
