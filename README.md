@@ -17,7 +17,7 @@
     * Usage
 
     ##  **Description**
-    A user can create a Readme/MarkDown File using Node.js
+    GenerateRM allows developers to create a ReadMe/MarkDown file with Node.js
 
     ## **Installation**
     JSON Package Included
@@ -26,7 +26,7 @@
      Node.Js, JavaScript, jQuery, GIT, GitHub, CSS, APIs, Command- Line
 
     ##  **Usage**
-    1. A user must first open their terminal in the correct directory. The user will then install all dependencies within the given JSON Package.
+    User must first install all dependencies given within the JSON Package. User will then answer a series of prompts. All answers must have correct spelling and/or puncutation. If an error is not returned and prompts answered are successful, user will then "git push" to their repository.
 
     ###  **Contributors**
     @git-theresa
