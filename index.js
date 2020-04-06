@@ -74,10 +74,14 @@ function inquireQuestions() {
 inquireQuestions();
       // Using GitHub API 
     function githubAPICall  (username, ans) {
+      const queryURL = `https://api.github.com/users/` + username;
     axios
-    .get(`https://api.github.com/users/${username}`,
-      {'Authorization': `token ${process.env.TOKEN}`}
-      )
+    .get(queryURL, {
+      headers: {
+      'Authorization': `token ${process.env.TOKEN}`
+      }
+    })
+  
       .then(function(response){ 
     //      axios
     // .get(`https://api.github.com/users/${username}/events{/public}`,
@@ -128,17 +132,17 @@ ${answers.usage}
 
 
 ## **Contact**
-## 
+#
 <img align="left" width="100" height="100" src="${response.data.avatar_url}">
-
+#
 <br />
 ## 
 <br />
-####  Name: ${answers.firstLast}
-####   GitHub ${answers.html_url}
-####  Portfolio ~~available~~ ${answers.portfolio}
-#### Email: [${response.data.email}](${response.data.email})
-#### LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
+* ####  Name: ${answers.firstLast}
+* ####   GitHub ${answers.html_url}
+* ####  Portfolio ~~available~~ ${answers.portfolio}
+* #### Email: [${response.data.email}](${response.data.email})
+* #### LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
 
 ## 
 <br />
