@@ -93,7 +93,7 @@ inquireQuestions();
         
 function generateMD(response, answers) {
 var userInfo =`
-
+<img align="left" src= "https://img.shields.io/badge/License-${response.license}-green">
 # **Project** ${answers.project}
 
 ## ~~Live Link~~
