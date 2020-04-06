@@ -5,48 +5,40 @@
 ## Live Link
 
 ##  **Table of Contents**
-  *Description
-  *Installation
-  *Usage
+  * Description
+  * Installation
+  * Technology Stack
+  * Usage
 
 ###  **Contributors**
-@git-theresa
+alkgas
 
 ##  **Description**
-GenerateRM allows developers to create a MarkDown file within Node.js
+thasdfewaef
 
 ## **Installation**
-JSON Package Included
+ageg
 
 ## **Technology Stack**
- Node.Js, JavaScript, jQuery, GitHub, HTML, CSS, APIs
+ Node.Js
 
 ##  **Usage**
-1. User will install all dependencies within the given JSON package
+aldfhohea
 
 
 ## **Contact**
+*
 <img align="left" width="100" height="100" src="https://avatars2.githubusercontent.com/u/57425164?v=4">
-* #### Name:  ()
-null
-* ### GitHub 
-"https://github.com/users/undefined"
-undefined
-
-* #### Email: 
-[null](null)
-
-
+*
+* ####  Name: undefined
+* ####   GitHub "https://github.com/users/git-theresa"
+* ####  undefined
+* #### Email: [null](null)
 * #### LinkedIn: "https://www.linkedin.com/in/theresa-eatherly
 
-## **License**
+##### **License**
 MIT
-
-
-
 ## Tests
-[travis-image]: https://img.shields.io/travis/git-theresa/GenerateRM/badge.svg?label=license
-
-### To Run Tests, Run the Following Command:
-npm
+[travis-image]: (https://img.shields.io/travis/git-theresa/GenerateRM/badge.svg?label=license)
+###### To Run Tests, Run the Following Command: alkgf
 

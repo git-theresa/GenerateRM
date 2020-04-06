@@ -10,7 +10,7 @@ function inquireQuestions() {
   .prompt([
   {   type: "input",
       message: "What is your full name",
-      name: "name"
+      name: "firstLast"
   },
   {
     type: "input",
@@ -94,9 +94,10 @@ var userInfo =`
 ## Live Link
 
 ##  **Table of Contents**
-  *Description
-  *Installation
-  *Usage
+  * Description
+  * Installation
+  * Technology Stack
+  * Usage
 
 ###  **Contributors**
 ${answers.contributors}
@@ -115,29 +116,20 @@ ${answers.usage}
 
 
 ## **Contact**
+*
 <img align="left" width="100" height="100" src="${response.data.avatar_url}">
-* #### Name:  ()
-${response.data.name}
-* ### GitHub 
-"https://github.com/users/${response.username}"
-${response.portfolio}
-
-* #### Email: 
-[${response.data.email}](${response.data.email})
-
-
+*
+* ####  Name: ${response.data.firstLast}
+* ####   GitHub "https://github.com/users/${answers.username}"
+* ####  ${answers.portfolio}
+* #### Email: [${response.data.email}](${response.data.email})
 * #### LinkedIn: "https://www.linkedin.com/in/${answers.linkedIn}
 
-## **License**
+##### **License**
 ${answers.license}
-
-
-
 ## Tests
-[travis-image]: https://img.shields.io/travis/git-theresa/GenerateRM/badge.svg?label=license
-
-### To Run Tests, Run the Following Command:
-${answers.tests}
+[travis-image]: (https://img.shields.io/travis/git-theresa/GenerateRM/badge.svg?label=license)
+###### To Run Tests, Run the Following Command: ${answers.tests}
 
 `
 
