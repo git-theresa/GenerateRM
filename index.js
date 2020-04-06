@@ -66,29 +66,24 @@ function inquireQuestions() {
   }
   ])
     .then(function(answers){
-      // answers.username="theresa";
-    let userName = answers.username;
-    githubAPICall(userName, answers);
+     
+    let username = answers.username;
+    githubAPICall(username, answers);
     });
 }
 inquireQuestions();
-      // Using GitHub API 
-    function githubAPICall  (username, ans) {
-      const queryURL = `https://api.github.com/users/` + username;
-    axios
-    .get(queryURL, {
-      headers: {
-      'Authorization': `token ${process.env.TOKEN}`
-      }
-    })
-  
-      .then(function(response){ 
-    
-      generateMD(response, ans);
-      console.log(response.data);
-      })
-     
 
+      // Using GitHub API 
+    function githubAPICall(username, ans) {
+      const queryURL = `https://api.github.com/users/` + username;
+      axios
+      .get(queryURL, {
+      headers: {'Authorization': `token ${process.env.TOKEN}`}
+      })  
+      .then(function(response) { 
+      generateMD(response, ans);
+      // console.log(response.data);
+      })
      .catch(function (error) {
       console.log(error);
       })
@@ -101,8 +96,7 @@ var userInfo =`
 
 # **Project** ${answers.project}
 
-## Live Link
-
+## ~~Live Link~~
 
 ##  **Table of Contents**
   * Description
@@ -110,8 +104,7 @@ var userInfo =`
   * Technology Stack
   * Usage
 
-###  **Contributors**
-${answers.contributors}
+
 
 ##  **Description**
 ${answers.description}
@@ -125,6 +118,8 @@ ${answers.technology}
 ##  **Usage**
 ${answers.usage}
 
+###  **Contributors**
+${answers.contributors}
 
 ## **Contact**
 ####  ** Name: 
