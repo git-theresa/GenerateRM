@@ -118,14 +118,18 @@ ${answers.usage}
 ## **Contact**
 *
 <img align="left" width="100" height="100" src="${response.data.avatar_url}">
-*
+
+<br/>
 ## --------------------------------------------------------------------
 * ####  Name: ${response.data.firstLast}
 * ####   GitHub "https://github.com/users/${answers.username}"
 * ####  ${answers.portfolio}
 * #### Email: [${response.data.email}](${response.data.email})
 * #### LinkedIn: "https://www.linkedin.com/in/${answers.linkedIn}
+
 ## -------------------------------------------------------------------
+<br/>
+
 ##### **License**
 ${answers.license}
 ## Tests
