@@ -127,15 +127,17 @@ ${answers.usage}
 
 
 ## **Contact**
-# 
+####  ** Name: 
+${answers.firstLast}
+####  ** GitHub 
+${answers.html_url}
+####  ** Portfolio 
+~~${response.portfolio}~~
+#### ** Email: 
+[${response.data.email}](${response.data.email})
+#### ** LinkedIn:
+https://www.linkedin.com/in/${answers.linkedIn}
 #
-
-####  ** Name: ${answers.firstLast}
-####  ** GitHub ${answers.html_url}
-####  ** Portfolio ~~available~~ ${response.portfolio}
-#### ** Email: [${response.data.email}](${response.data.email})
-#### ** LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
-
 ## 
 <img align="left" width="100" height="100" src="${response.data.avatar_url}">
 <br />
@@ -147,10 +149,10 @@ ${answers.license}
 ###### To Run Tests, Run the Following Command: ${answers.tests}
 
 `
-
-
 // End MarkUp
-fs.writeFile("README.md", userInfo, function(err) {
+
+  
+  fs.writeFile("README.md", userInfo, function(err) {
   if (err) {
   return console.log(err);
   }
