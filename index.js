@@ -95,16 +95,16 @@ inquireQuestions();
   
   <img align="left" src= "https://img.shields.io/badge/License-${answers.license}-green">
   <img align="right" width="100" height="100" src="${response.data.avatar_url}">
-  ##
-  <br />
+  
+ 
   #
-  <br />
+ 
   # **Project** ${answers.project}
   #
-  <br />
+ 
   ##  **_Live Link_** 
   *  ~~_Insert Live Link Once Generated_~~
-  <br />
+  
   ##  **Table of Contents**
   * Description
   * Installation
@@ -135,8 +135,7 @@ inquireQuestions();
   #### * LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
   #
   ## 
-  
-  <br />
+
   #
   ####  **License** 
   *  ${answers.license}

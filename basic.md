@@ -1,11 +1,13 @@
+
+
 # Generate a ReadME
 
 ### Description
 This is for the use of a developer to create and generate a ReadMe/MarkDown File using Node.js
  
-#
+<img src = assets/demo.gif>
 
-#
+
 
 
 
