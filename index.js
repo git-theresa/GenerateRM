@@ -101,6 +101,8 @@ inquireQuestions();
   # **Project** ${answers.project}
   
  
+
+
   ##  **_Live Link_** 
   *  ~~_Insert Live Link Once Generated_~~
   
@@ -113,23 +115,20 @@ inquireQuestions();
   ##  **Description**
   ${answers.description}
 
-  ![demo gif](assets/demo.gif)
+  ![screenshot](assets/screenShot1.png)
 
 
   ## **Installation**
   ${answers.installation}
+
+  ![screenshot install](assets/screenShot2.png)
+  
 
   ## **Technology Stack**
   ${answers.technology}
 
   ##  **Usage**
   ${answers.usage}
-
-
-
-
-
-  ![screenshot](assets/RMscreenshot.png)
 
   ###  **Contributors**
   ${answers.contributors}

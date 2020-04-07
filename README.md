@@ -5,9 +5,11 @@
   <img align="right" width="100" height="100" src="https://avatars2.githubusercontent.com/u/57425164?v=4">
   
  
-  # **Project** test
+  # **Project** Generate ReadME
   
  
+
+
   ##  **_Live Link_** 
   *  ~~_Insert Live Link Once Generated_~~
   
@@ -18,28 +20,25 @@
   * Usage
 
   ##  **Description**
-  test
+  Generate ReadME allows a developer to create and generate a ReadMe/MarkDown File using Node.js
 
-  ![demo gif](assets/demo.gif)
+  ![screenshot](assets/screenShot1.png)
 
 
   ## **Installation**
-  test
+  JSON Package Included
 
-  ## **Technology Stack**
+  ![screenshot install](assets/screenShot2.png)
   
 
+  ## **Technology Stack**
+   Node.Js, JavaScript, jQuery, GIT, GitHub, HTML, CSS, APIs, Command- Line
+
   ##  **Usage**
-  test
-
-
-
-
-
-  ![screenshot](assets/RMscreenshot.png)
+  After forking this repository in your GitHub, the user will install all dependencies within the given JSON Package.  _To install, open the terminal into the correct directory and simply type **npm install.**_  After installation, the user will answer a series of prompts given in the terminal command line.  **All answers must have correct spelling and/or punctuation. Any typo will give and error.**  _If GitHub API does not recognize the user input, or if the user has missing information on their GitHub profile, __undefined__ will be a returned response.  Once all questions are answered, the command line will return **Success!**  Lastly, the user will use all git commands _(git add -A, git commit -m "", git push)._  Once successfully pushed, Generate ReadME will generate a clean and presentable README.MD. The new MarkDown file will also include a badge for the license chosen, email address, and profile picture.  
 
   ###  **Contributors**
-  test
+  @git-theresa
 
   ## **Contact**
   ####  Name: Theresa Eatherly
@@ -53,6 +52,6 @@
    MIT
 
   #####  Tests
-  _To run tests, use the following command:_  test
+  _To run tests, use the following command:_  npm i
   
 

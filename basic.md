@@ -13,7 +13,8 @@ After forking this repository in your GitHub, the user will install all dependen
 _To install, open the terminal into the correct directory and simply type **npm install.**_
 
 
-<img src = assets/demo.gif width="400" style="display: block;; margin: 0 auto"/>
+
+<img src = assets/demo.gif width="300" style="display: block; margin 0 auto"/>
 
 
 
