@@ -113,6 +113,9 @@ inquireQuestions();
   ##  **Description**
   ${answers.description}
 
+  <img src = assets/demo.gif alt="video demo" width="400" style="display: block; margin: 0 auto"/>
+
+
   ## **Installation**
   ${answers.installation}
 
@@ -122,24 +125,28 @@ inquireQuestions();
   ##  **Usage**
   ${answers.usage}
 
+
+
+
+
+  <img src=assets/RMscreenshot.png alt="screenshot" width="400" style="display: block; margin: 0 auto"/>
+
   ###  **Contributors**
   ${answers.contributors}
 
   ## **Contact**
-  ####  * Name: ${answers.firstLast}
-  ####  * GitHub "https://github.com/${answers.username}" 
-  ####  * Portfolio 
+  ####  Name: ${answers.firstLast}
+  ####  GitHub https://github.com/${answers.username}
+  ####  Portfolio 
   ~~${response.portfolio}~~
-  #### * Email: [${response.data.email}](${response.data.email})
-  #### * LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
-  #
-  ## 
+  ####  Email: [${response.data.email}](${response.data.email})
+  ####  LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
+  
+  #####  **License** 
+   ${answers.license}
 
-  #
-  ####  **License** 
-  *  ${answers.license}
-
-  #### Tests  _To run tests, use the following command:_  ${answers.tests}
+  #####Tests
+  _To run tests, use the following command:_  ${answers.tests}
   
 
 `
