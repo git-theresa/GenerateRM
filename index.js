@@ -92,17 +92,17 @@ inquireQuestions();
         // Generate ReadMe 
   function generateMD(response, answers) {
   var userInfo =`
-  #
+  
   <img align="left" src= "https://img.shields.io/badge/License-${answers.license}-green">
-  #
+  <img align="right" width="100" height="100" src="${response.data.avatar_url}">
   ##
   <br />
   # **Project** 
-  ${answers.project}
+  _${answers.project}_
   #
   <br />
   ## Live Link 
-  * ~~Insert Live Link Once Generated~~
+  * ~~_Insert Live Link Once Generated_~~
 
   ##  **Table of Contents**
   * Description
@@ -134,10 +134,11 @@ inquireQuestions();
   #### * LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
   #
   ## 
-  <img align="left" width="100" height="100" src="${response.data.avatar_url}">
+  
   <br />
   #
-  ##### **License** ${answers.license}
+  ##### **License** 
+  * ${answers.license}
 
   ## Tests
   ###### To Run Tests, Run the Following Command: ${answers.tests}

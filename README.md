@@ -1,15 +1,15 @@
 
-  #
+  
   <img align="left" src= "https://img.shields.io/badge/License-MIT-green">
-  #
+  <img align="right" width="100" height="100" src="https://avatars2.githubusercontent.com/u/57425164?v=4">
   ##
   <br />
   # **Project** 
-  GenerateRM
+  _GenerateRM_
   #
   <br />
   ## Live Link 
-  * ~~Insert Live Link Once Generated~~
+  * ~~_Insert Live Link Once Generated_~~
 
   ##  **Table of Contents**
   * Description
@@ -18,7 +18,7 @@
   * Usage
 
   ##  **Description**
-  GenerateRM is for a developer to create a ReadMe/MarkDown File using Node.js
+  GenerateRM allows a developer to create a ReadMe/MarkDown file using Node.js
 
   ## **Installation**
   JSON Package with all dependencies included
@@ -27,7 +27,7 @@
    Node.Js, JavaScript, jQuery, GIT, GitHub, CSS, APIs, Command- Line
 
   ##  **Usage**
-  1. User opens their terminal (in the correct directory) and installs all dependencies given within the JSON Package. 2. The user will type node index.js in the terminal command line. 3. There will be a series of prompts for the user to answer. All answers must have correct spelling and/or puncutation, or an error will be given. If all answers are correct, (such as github user name), the command line will return "Success!" 4. The final steps to all git commands should be typed into the command line now (git add -A, git commit -m, git push).  
+  1. User opens their terminal (in the correct directory) and installs all dependencies given within the JSON Package. 2. The user will type node index.js in the terminal command line. 3. There will be a series of prompts for the user to answer. All answers must have correct spelling and/or puncutation, or an error will be given. If all answers are correct, (such as github user name), the command line will return "Success!" 4. The final steps to all git commands should be typed into the command line now (git add -A, git commit -m, git push).
 
   ###  **Contributors**
   @git-theresa
@@ -41,10 +41,11 @@
   #### * LinkedIn: https://www.linkedin.com/in/theresa-eatherly-4362b14a/
   #
   ## 
-  <img align="left" width="100" height="100" src="https://avatars2.githubusercontent.com/u/57425164?v=4">
+  
   <br />
   #
-  ##### **License** MIT
+  ##### **License** 
+  * MIT
 
   ## Tests
   ###### To Run Tests, Run the Following Command: npm i
