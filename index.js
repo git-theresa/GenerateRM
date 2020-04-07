@@ -113,7 +113,7 @@ inquireQuestions();
   ##  **Description**
   ${answers.description}
 
-  ![demo gif] (assets/demo.gif width="400" style="display: block; margin: 0 auto")
+  ![demo gif](assets/demo.gif)
 
 
   ## **Installation**
@@ -129,7 +129,7 @@ inquireQuestions();
 
 
 
-  ![screenshot] (assets/RMscreenshot.png  width="400" style="display: block; margin: 0 auto")
+  ![screenshot](assets/RMscreenshot.png)
 
   ###  **Contributors**
   ${answers.contributors}
