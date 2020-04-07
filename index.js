@@ -92,11 +92,13 @@ inquireQuestions();
         // Generate ReadMe 
   function generateMD(response, answers) {
   var userInfo =`
+  #
   <img align="left" src= "https://img.shields.io/badge/License-${answers.license}-green">
   #
-  #
+  ##
   <br />
-  # **Project** ${answers.project}
+  # **Project** 
+  ${answers.project}
   #
   <br />
   ## Live Link 
