@@ -5,7 +5,7 @@
 ### Description
 This is for the use of a developer to create and generate a ReadMe/MarkDown File using Node.js
 
-<img src = assets/RMscreenshot.png>
+<img src = assets/mobile2.jpg>
  
 ### Usage:  
 <img src = assets/demo.gif>
@@ -20,7 +20,7 @@ Lastly, the user will use all git commands(git add -A, git commit -m " ", git pu
 Once successfully pushed, Generate ReadMe will identify a clean and presentable ReadMe. 
 This includes a profile picture, email address, all contact links available, and a licence badge.
 
-<img src = assets/RMscreenshot2.png>
+<img src = assets/mobile3.jpg>
 
 
 
