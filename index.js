@@ -97,13 +97,14 @@ inquireQuestions();
   <img align="right" width="100" height="100" src="${response.data.avatar_url}">
   ##
   <br />
-  # **Project** 
-  _${answers.project}_
   #
   <br />
-  ## Live Link 
-  * ~~_Insert Live Link Once Generated_~~
-
+  # **Project** ${answers.project}
+  #
+  <br />
+  ##  **_Live Link_** 
+  *  ~~_Insert Live Link Once Generated_~~
+  <br />
   ##  **Table of Contents**
   * Description
   * Installation
@@ -137,11 +138,11 @@ inquireQuestions();
   
   <br />
   #
-  ##### **License** 
-  * ${answers.license}
+  ####  **License** 
+  *  ${answers.license}
 
-  ## Tests
-  ###### To Run Tests, Run the Following Command: ${answers.tests}
+  #### Tests  _To run tests, use the following command:_  ${answers.tests}
+  
 
 `
     // End MarkUp

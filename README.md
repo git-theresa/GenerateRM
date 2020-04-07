@@ -4,13 +4,14 @@
   <img align="right" width="100" height="100" src="https://avatars2.githubusercontent.com/u/57425164?v=4">
   ##
   <br />
-  # **Project** 
-  _GenerateRM_
   #
   <br />
-  ## Live Link 
-  * ~~_Insert Live Link Once Generated_~~
-
+  # **Project** GenerateRM
+  #
+  <br />
+  ##  **_Live Link_** 
+  *  ~~_Insert Live Link Once Generated_~~
+  <br />
   ##  **Table of Contents**
   * Description
   * Installation
@@ -27,10 +28,10 @@
    Node.Js, JavaScript, jQuery, GIT, GitHub, CSS, APIs, Command- Line
 
   ##  **Usage**
-  1. User opens their terminal (in the correct directory) and installs all dependencies given within the JSON Package. 2. The user will type node index.js in the terminal command line. 3. There will be a series of prompts for the user to answer. All answers must have correct spelling and/or puncutation, or an error will be given. If all answers are correct, (such as github user name), the command line will return "Success!" 4. The final steps to all git commands should be typed into the command line now (git add -A, git commit -m, git push).
+  Usage
 
   ###  **Contributors**
-  @git-theresa
+  
 
   ## **Contact**
   ####  * Name: Theresa Eatherly
@@ -44,9 +45,9 @@
   
   <br />
   #
-  ##### **License** 
-  * MIT
+  ####  **License** 
+  *  MIT
 
-  ## Tests
-  ###### To Run Tests, Run the Following Command: npm i
+  #### Tests  _To run tests, use the following command:_  nmp i
+  
 
