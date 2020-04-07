@@ -90,62 +90,61 @@ inquireQuestions();
 
 
         // Generate ReadMe 
-    function generateMD(response, answers) {
-    var userInfo =`
-    <img align="left" src= "https://img.shields.io/badge/License-${answers.license}-green">
-    #
-    #
-    <br />
-    # **Project** ${answers.project}
-    #
-    <br />
+  function generateMD(response, answers) {
+  var userInfo =`
+  <img align="left" src= "https://img.shields.io/badge/License-${answers.license}-green">
+  #
+  #
+  <br />
+  # **Project** ${answers.project}
+  #
+  <br />
+  ## Live Link 
+  * ~~Insert Live Link Once Generated~~
 
-    ## Live Link 
-    * ~~Insert Live Link Once Generated~~
+  ##  **Table of Contents**
+  * Description
+  * Installation
+  * Technology Stack
+  * Usage
 
-    ##  **Table of Contents**
-    * Description
-    * Installation
-    * Technology Stack
-    * Usage
+  ##  **Description**
+  ${answers.description}
 
-    ##  **Description**
-    ${answers.description}
+  ## **Installation**
+  ${answers.installation}
 
-    ## **Installation**
-    ${answers.installation}
+  ## **Technology Stack**
+  ${answers.technology}
 
-    ## **Technology Stack**
-    ${answers.technology}
+  ##  **Usage**
+  ${answers.usage}
 
-    ##  **Usage**
-    ${answers.usage}
+  ###  **Contributors**
+  ${answers.contributors}
 
-    ###  **Contributors**
-    ${answers.contributors}
+  ## **Contact**
+  ####  * Name: ${answers.firstLast}
+  ####  * GitHub "https://github.com/${answers.username}" 
+  ####  * Portfolio 
+  ~~${response.portfolio}~~
+  #### * Email: [${response.data.email}](${response.data.email})
+  #### * LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
+  #
+  ## 
+  <img align="left" width="100" height="100" src="${response.data.avatar_url}">
+  <br />
+  #
+  ##### **License** ${answers.license}
 
-    ## **Contact**
-    ####  * Name: ${answers.firstLast}
-    ####  * GitHub "https://github.com/${answers.username}" 
-    ####  * Portfolio 
-    ~~${response.portfolio}~~
-    #### * Email: [${response.data.email}](${response.data.email})
-    #### * LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
-    #
-    ## 
-    <img align="left" width="100" height="100" src="${response.data.avatar_url}">
-    <br />
-    #
-    ##### **License** ${answers.license}
+  ## Tests
+  ###### To Run Tests, Run the Following Command: ${answers.tests}
 
-    ## Tests
-    ###### To Run Tests, Run the Following Command: ${answers.tests}
-
-    `
+`
     // End MarkUp
 
       // Place Responses and Answers onto Page
-      fs.writeFile("README.md", userInfo, function(err) {
+fs.writeFile("README.md", userInfo, function(err) {
       if (err) {
       return console.log(err);
       }
