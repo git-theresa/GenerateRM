@@ -113,7 +113,7 @@ inquireQuestions();
   ##  **Description**
   ${answers.description}
 
-  <img src = assets/demo.gif alt="video demo" width="400" style="display: block; margin: 0 auto"/>
+  ![demo gif] (assets/demo.gif width="400" style="display: block; margin: 0 auto")
 
 
   ## **Installation**
@@ -129,7 +129,7 @@ inquireQuestions();
 
 
 
-  <img src=assets/RMscreenshot.png alt="screenshot" width="400" style="display: block; margin: 0 auto"/>
+  ![screenshot] (assets/RMscreenshot.png  width="400" style="display: block; margin: 0 auto")
 
   ###  **Contributors**
   ${answers.contributors}
@@ -145,7 +145,7 @@ inquireQuestions();
   #####  **License** 
    ${answers.license}
 
-  #####Tests
+  #####  Tests
   _To run tests, use the following command:_  ${answers.tests}
   
 
