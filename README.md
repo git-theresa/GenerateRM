@@ -20,9 +20,9 @@
   * Usage
 
   ##  **Description**
-  Generate ReadME allows a developer to create and generate a ReadMe/MarkDown File using Node.js
+  Generate ReadME allows a developer to create and generate a ReadMe/MarkDown file using Node.js
 
-  ![screenshot](assets/screenShot1.png)
+  ![app screenshot](assets/mobile2.jpg)
 
 
   ## **Installation**
@@ -32,10 +32,12 @@
   
 
   ## **Technology Stack**
-   Node.Js, JavaScript, jQuery, GIT, GitHub, HTML, CSS, APIs, Command- Line
+   Node.Js, JavaScript, jQuery, GitHub, HTML, CSS, APIs, Command- Line
 
   ##  **Usage**
-  After forking this repository in your GitHub, the user will install all dependencies within the given JSON Package.  _To install, open the terminal into the correct directory and simply type **npm install.**_  After installation, the user will answer a series of prompts given in the terminal command line.  **All answers must have correct spelling and/or punctuation. Any typo will give and error.**  _If GitHub API does not recognize the user input, or if the user has missing information on their GitHub profile, __undefined__ will be a returned response.  Once all questions are answered, the command line will return **Success!**  Lastly, the user will use all git commands _(git add -A, git commit -m "", git push)._  Once successfully pushed, Generate ReadME will generate a clean and presentable README.MD. The new MarkDown file will also include a badge for the license chosen, email address, and profile picture.  
+  After forking this repository in your GitHub, the user will install all dependencies within the given JSON Package. _To install, open the terminal into the correct directory and simply type **npm install**._   After installation, the user will answer a series of prompts given in the terminal command line. **All answers must have correct spelling and/or punctuation. Any typo will give and error.**  _If GitHub API does not recognize the user input, or if the user has missing information on their GitHub profile, **undefined**  will be a returned response._   Once all questions are answered, the command line will return **Success!**  Lastly, the user will use all git commands _(git add -A, git commit -m "", git push)._  Once successfully pushed, Generate ReadME will generate a clean and presentable README.MD. The new MarkDown file will also include a badge for the license chosen, email address, and profile picture.
+
+  ![screenshot undefined](assets/mobile3.jpg)
 
   ###  **Contributors**
   @git-theresa

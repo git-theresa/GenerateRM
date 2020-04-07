@@ -115,7 +115,7 @@ inquireQuestions();
   ##  **Description**
   ${answers.description}
 
-  ![screenshot](assets/screenShot1.png)
+  ![app screenshot](assets/mobile2.jpg)
 
 
   ## **Installation**
@@ -129,6 +129,8 @@ inquireQuestions();
 
   ##  **Usage**
   ${answers.usage}
+
+  ![screenshot undefined](assets/mobile3.jpg)
 
   ###  **Contributors**
   ${answers.contributors}
