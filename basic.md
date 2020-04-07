@@ -9,7 +9,10 @@ This is for the use of a developer to create and generate a ReadMe/MarkDown File
  
 ### Usage: 
 After forking this repository in your GitHub, the user will install all dependencies within the given JSON Package.
+
 _To install, open the terminal into the correct directory and simply type **npm install.**_
+
+
 <img src = assets/demo.gif width="400" style="display: block;; margin: 0 auto"/>
 
 
@@ -20,7 +23,9 @@ Once all questions are answered  the command will return **Success!**
 
 __If GitHub API does not recognize the user input given, _undefined_ will be a returned answer__
 
+
 <img src = assets/mobile3.jpg  width="300" style="display: block; margin: 0 auto"/>
+
 
 Lastly, the user will use all git commands(git add -A, git commit -m " ", git push).
 Once successfully pushed, Generate ReadMe will identify a clean and presentable ReadMe. 
@@ -36,7 +41,7 @@ This includes a profile picture, email address, all contact links available, and
 *   API
 *   Node.js
 
-#### Contributors :1st_place_medal:
+#### Contributors 
 * @git-theresa
 
 #### Contact
