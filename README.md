@@ -5,7 +5,7 @@
   <img align="right" width="100" height="100" src="https://avatars2.githubusercontent.com/u/57425164?v=4">
   
  
-  # **Project** test
+  # **Project** Generate ReadMe
   
  
 
@@ -20,43 +20,43 @@
   * Usage
 
   ##  **Description**
-  test
+  Generate ReadMe allows a developer to create a ReadMe/MarkDown file using Node.js
 
-  <img  style="width: 100px;  border-radius: 50%;" alt="screenshot" src="assets/mobile2.jpg" />
+  <img style="width: 100" alt="screenshot" src="assets/mobile2.jpg" />
 
 
 
   ## **Installation**
-  test
+  JSON Package Included
 
-  <img  style="width: 100px;  border-radius: 50%;" src="assets/screenShot2.png" alt="screenshot" />
+  <img  style="width: 100" src="assets/screenShot2.png" alt="screenshot" />
  
   
 
   ## **Technology Stack**
-  
+   Node.Js, JavaScript, jQuery, GIT, GitHub, HTML, CSS, APIs, Command- Line
 
   ##  **Usage**
-  test
+  After forking this repository in your GitHub, the user will install all dependencies within the given JSON Package. _To install, open the terminal into the correct directory and simply type **npm install.**_  After installation, the user will answer a series of prompts given in the terminal command line. **All answers must have correct spelling and/or punctuation. Any typo will give and error.** _If GitHub API does not recognize the user input, or if the user has missing information on their GitHub profile, **undefined**  will be a returned response._ Once all questions are answered, the command line will return **Success!**  Lastly, the user will use all git commands _(git add -A, git commit -m "", git push)._  Once successfully pushed, Generate ReadME will generate a clean and presentable README.MD. The new MarkDown file will also include a badge for the license chosen, email address, and profile picture.
 
-  <img  style="width: 100px;  border-radius: 50%;" src="assets/mobile3.jpg" alt="screenshot" />
+  <img  style="width: 100px;" src="assets/undefined.png" alt="screenshot" />
 
 
   ###  **Contributors**
-  test
+  @git-theresa
 
   ## **Contact**
-  ####  Name: theresa
+  ####  Name: Theresa Eatherly
   ####  GitHub https://github.com/git-theresa
   ####  Portfolio 
   ~~undefined~~
   ####  Email: [t.eatherly@gmail.com](t.eatherly@gmail.com)
-  ####  LinkedIn: https://www.linkedin.com/in/test
+  ####  LinkedIn: https://www.linkedin.com/in/theresa-eatherly-4362b14a/
   
   #####  **License** 
    MIT
 
   #####  Tests
-  _To run tests, use the following command:_  test
+  _To run tests, use the following command:_  npm run test
   
 
