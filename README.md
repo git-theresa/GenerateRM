@@ -20,24 +20,27 @@
   * Usage
 
   ##  **Description**
-  Generate ReadME allows a developer to create and generate a ReadMe/MarkDown file using Node.js
+  Generate ReadMe allows a developer to create a ReadMe/MarkDown file using Node.js
 
-  ![app screenshot](assets/mobile2.jpg)
+  <img src="assets/mobile2.jpg" style="width: 100px;  border-radius: 50%;" alt="screenshot">
+
 
 
   ## **Installation**
   JSON Package Included
 
-  ![screenshot install](assets/screenShot2.png)
+  <img src="assets/screenShot2.png" style="width: 100px;  border-radius: 50%;" alt="screenshot">
+ 
   
 
   ## **Technology Stack**
-   Node.Js, JavaScript, jQuery, GitHub, HTML, CSS, APIs, Command- Line
+   Node.Js, JavaScript, jQuery, GIT, GitHub, HTML, CSS, APIs, Command- Line
 
   ##  **Usage**
-  After forking this repository in your GitHub, the user will install all dependencies within the given JSON Package. _To install, open the terminal into the correct directory and simply type **npm install**._   After installation, the user will answer a series of prompts given in the terminal command line. **All answers must have correct spelling and/or punctuation. Any typo will give and error.**  _If GitHub API does not recognize the user input, or if the user has missing information on their GitHub profile, **undefined**  will be a returned response._   Once all questions are answered, the command line will return **Success!**  Lastly, the user will use all git commands _(git add -A, git commit -m "", git push)._  Once successfully pushed, Generate ReadME will generate a clean and presentable README.MD. The new MarkDown file will also include a badge for the license chosen, email address, and profile picture.
+  After forking this repository in your GitHub, the user will install all dependencies within the given JSON Package. _To install, open the terminal into the correct directory and simply type **npm install.**_  After installation, the user will answer a series of prompts given in the terminal command line. **All answers must have correct spelling and/or punctuation. Any typo will give anerror!** _If GitHub's API does not recognize the user's input, or if the user has missing information on their GitHub profile, **undefined** will be a returned response._  Once all questions are answered, the command line will return **Success!**  Lastly, the userwill use all git commands _(git add -A, git commit -m "", git push)._  Once successfully pushed, Generate ReadME will generate a clean and presentable ReadME.MD  The new MarkDown file will also include a badge for the license chosen, email address, and profile picture!
 
-  ![screenshot undefined](assets/mobile3.jpg)
+  <img src="assets/mobile3.jpg" style="width: 100px;  border-radius: 50%;" alt="screenshot">
+
 
   ###  **Contributors**
   @git-theresa
@@ -54,6 +57,6 @@
    MIT
 
   #####  Tests
-  _To run tests, use the following command:_  npm i
+  _To run tests, use the following command:_  npm run test
   
 

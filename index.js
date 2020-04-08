@@ -115,13 +115,15 @@ inquireQuestions();
   ##  **Description**
   ${answers.description}
 
-  ![app screenshot](assets/mobile2.jpg)
+  <img src="assets/mobile2.jpg" style="width: 100px;  border-radius: 50%;" alt="screenshot">
+
 
 
   ## **Installation**
   ${answers.installation}
 
-  ![screenshot install](assets/screenShot2.png)
+  <img src="assets/screenShot2.png" style="width: 100px;  border-radius: 50%;" alt="screenshot">
+ 
   
 
   ## **Technology Stack**
@@ -130,7 +132,8 @@ inquireQuestions();
   ##  **Usage**
   ${answers.usage}
 
-  ![screenshot undefined](assets/mobile3.jpg)
+  <img src="assets/mobile3.jpg" style="width: 100px;  border-radius: 50%;" alt="screenshot">
+
 
   ###  **Contributors**
   ${answers.contributors}
