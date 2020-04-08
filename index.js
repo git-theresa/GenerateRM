@@ -63,7 +63,12 @@ function inquireQuestions() {
     type: "input",
     message: "What is the command to run tests?",
     name: "tests"
-  }
+  },
+  {
+   type: "input",
+   message: "Questions?",
+   name: "questions"
+  }  
   ])
     .then(function(answers){
     let username = answers.username;
@@ -115,14 +120,14 @@ inquireQuestions();
   ##  **Description**
   ${answers.description}
 
-  <img style="width: 100" alt="screenshot" src="assets/mobile2.jpg" />
+  <img src="assets/genScreenShot.png" width="75px" alt="screenshot">
 
 
 
   ## **Installation**
   ${answers.installation}
 
-  <img  style="width: 100" src="assets/screenShot2.png" alt="screenshot" />
+  <img  style="width: 100px;" src="assets/screenShot2.png" alt="screenshot" />
  
   
 
@@ -132,7 +137,7 @@ inquireQuestions();
   ##  **Usage**
   ${answers.usage}
 
-  <img  style="width: 100px;" src="assets/undefined.png" alt="screenshot" />
+  <img src=assets/undefined.png style="width: 100px;" alt="screenshot" />
 
 
   ###  **Contributors**
@@ -151,6 +156,9 @@ inquireQuestions();
 
   #####  Tests
   _To run tests, use the following command:_  ${answers.tests}
+
+  ##### Questions?
+  _Please contact me @:_ [${response.data.email}](${response.data.email})
   
 
 `
