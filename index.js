@@ -115,14 +115,14 @@ inquireQuestions();
   ##  **Description**
   ${answers.description}
 
-  <img src="assets/mobile2.jpg" style="width: 100px;  border-radius: 50%;" alt="screenshot">
+  <img  style="width: 100px;  border-radius: 50%;" alt="screenshot" src="assets/mobile2.jpg" />
 
 
 
   ## **Installation**
   ${answers.installation}
 
-  <img src="assets/screenShot2.png" style="width: 100px;  border-radius: 50%;" alt="screenshot">
+  <img  style="width: 100px;  border-radius: 50%;" src="assets/screenShot2.png" alt="screenshot" />
  
   
 
@@ -132,7 +132,7 @@ inquireQuestions();
   ##  **Usage**
   ${answers.usage}
 
-  <img src="assets/mobile3.jpg" style="width: 100px;  border-radius: 50%;" alt="screenshot">
+  <img  style="width: 100px;  border-radius: 50%;" src="assets/mobile3.jpg" alt="screenshot" />
 
 
   ###  **Contributors**
