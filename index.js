@@ -1,9 +1,10 @@
+// Require Packages
 const fs = require('fs');
 const inquirer = require('inquirer');
 const axios = require('axios');
 require('dotenv').config();
 
-
+// Prompts within command line
 function inquireQuestions() {
   inquirer
   .prompt([
@@ -63,12 +64,8 @@ function inquireQuestions() {
     type: "input",
     message: "What is the command to run tests?",
     name: "tests"
-  },
-  {
-   type: "input",
-   message: "Questions?",
-   name: "questions"
-  }  
+  }
+   
   ])
     .then(function(answers){
     let username = answers.username;
@@ -105,9 +102,6 @@ inquireQuestions();
  
   # **Project** ${answers.project}
   
- 
-
-
   ##  **_Live Link_** 
   *  ~~_Insert Live Link Once Generated_~~
   
@@ -116,29 +110,24 @@ inquireQuestions();
   * Installation
   * Technology Stack
   * Usage
+  * Contact
+  * License
+  * Test
+  * Questions
 
   ##  **Description**
   ${answers.description}
-
-  <img src="assets/genScreenShot.png" width="75px" alt="screenshot">
-
-
-
+ 
   ## **Installation**
   ${answers.installation}
 
   <img  style="width: 100px;" src="assets/screenShot2.png" alt="screenshot" />
  
-  
-
   ## **Technology Stack**
   ${answers.technology}
 
   ##  **Usage**
   ${answers.usage}
-
-  <img src=assets/undefined.png style="width: 100px;" alt="screenshot" />
-
 
   ###  **Contributors**
   ${answers.contributors}
@@ -151,21 +140,20 @@ inquireQuestions();
   ####  Email: [${response.data.email}](${response.data.email})
   ####  LinkedIn: https://www.linkedin.com/in/${answers.linkedIn}
   
-  #####  **License** 
+  ####  **License** 
    ${answers.license}
 
-  #####  Tests
+  ####  Tests
   _To run tests, use the following command:_  ${answers.tests}
 
-  ##### Questions?
-  _Please contact me @:_ [${response.data.email}](${response.data.email})
+  #### Questions? 
+  _Please contact me @:_[${response.data.email}](${response.data.email})
   
-
 `
     // End MarkUp
 
       // Place Responses and Answers onto Page
-fs.writeFile("README.md", userInfo, function(err) {
+    fs.writeFile("genREADME.md", userInfo, function(err) {
       if (err) {
       return console.log(err);
       }
