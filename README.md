@@ -30,17 +30,13 @@ _If GitHub API does not recognize the user input, or if the user has missing inf
 
 <img src = assets/mobile3.jpg  width="300" style="display: block; margin: 0 auto"/>
 
-Once all questions are answered, the command line will return **Success!**  
+
 User can append a screenshot of the project by changing the source of the <img> tag in the index.js file. 
-Also, Once a Live Link has been created, the user can hardcode the link (http://LiveLinkURL) under the #LiveLink in the index.js file.  
+Also, Once a Live Link has been created, the user can hard code the link (http://LiveLinkURL) under the #LiveLink in the index.js file.  
+Once all questions are answered, the command will return **Success!**
 Lastly, the user will use all git commands _(git add -A, git commit -m "", git push)._  
 Once successfully pushed, Generate ReadME will generate a clean and presentable README.MD. 
 The new MarkDown file will also include a badge for the license chosen, email address, and profile picture.
-After installation, user will answer a series of prompts given in the terminal command line. 
-**All answers must have correct spelling and/or punctuation. Any typo will give an error.** 
-Once all questions are answered  the command will return **Success!** 
-
-
 
 ### **Technology Stack**
 *   JavaScript
