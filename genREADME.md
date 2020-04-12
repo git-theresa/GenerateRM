@@ -21,7 +21,7 @@
   * Questions
 
   ##  **Description**
-  Genertae ReadME allows a developer to create a ReadMe/MarkDown file using Node.js
+  Generate ReadME allows a developer to create a ReadMe/MarkDown file using Node.js
  
   ## **Installation**
   JSON Package Included
