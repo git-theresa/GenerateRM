@@ -4,7 +4,7 @@
   "description": "<img src = \"https://avatars3.githubusercontent.com/u/60341?v=4\">",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "gh-badges": "^2.2.1",
     "inquirer": "^7.1.0"
